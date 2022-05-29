@@ -1,4 +1,60 @@
     *{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.loader{
+position: fixed;
+top:0%;
+left: 0;
+background: grey;
+}
+h1{
+    color: aqua;
+    font-size: 40px;
+    text-align: center;
+}
+.preloader{
+    position: fixed;
+    height:100vh ;
+    width:100%;
+    top: 0;
+    left: 0;
+    background-color: mediumspringgreen;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-top-color: transparent;
+}
+.preloader nav:nth-child(1){
+    height: 200px;
+    width: 200px;
+    border: 2px solid blueviolet;
+    position: absolute;
+    border-radius: 50%;
+    border-top-color: transparent;
+    border-bottom-color:transparent ;
+    animation: spin 1s infinite linear;
+}
+.preloader nav:nth-child(2){
+    height: 150px;
+    width: 150px;
+    border: 2px solid grey;
+    position: absolute;
+    border-radius: 50%;
+    border-top-color: transparent;
+    border-bottom-color:transparent ;
+    animation: spin 2s infinite linear;
+}
+@keyframes spin{
+   0%{
+       transform: rotate();
+   }
+   100%{
+    transform:rotate(360deg);
+   }
+}
+*{
         background: linear-gradient(to right,rgb(58, 51, 51) 0%, black 100%);
         background-repeat: no-repeat;
         background-size: cover;
