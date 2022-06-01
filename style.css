@@ -430,3 +430,6 @@ transform: rotate();
 transform:rotate(360deg);
 }
 }
+/* For mobile phones: */
+[class*="col-"]
+{width: 100%;}
